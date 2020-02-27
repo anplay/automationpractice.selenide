@@ -1,3 +1,4 @@
+# UI Tests for Tech Tasks around Automationpractice site
 ### Tech stack:
 - Java 8 ([Install docs](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html))
 - Maven ([Install docs](https://maven.apache.org/install.html))
