@@ -17,6 +17,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class TechTasks extends BaseTest {
     public static final int INDEX = 0;
+
     MainPage mainPage;
     HeaderFragment headerFragment;
     UserActionUtils userActionUtils;
@@ -26,8 +27,6 @@ public class TechTasks extends BaseTest {
     BuyProductBlockFragment buyProductBlockFragment;
 
     List<Basket> baskets;
-    String userFirst;
-    String userSecond;
     int usedBasketId;
 
     Random rand = new Random();
@@ -46,7 +45,7 @@ public class TechTasks extends BaseTest {
     }
 
     @Test
-    public void registerNewUser() throws InterruptedException {
+    public void registerNewUser() {
         String timestamp = String.valueOf(System.currentTimeMillis());
 
         userActionUtils.signUpNewUserWithoutLogout(timestamp);
@@ -55,7 +54,7 @@ public class TechTasks extends BaseTest {
     }
 
     @Test
-    public void checkoutByRandomBasket() throws InterruptedException {
+    public void checkoutByRandomBasket() {
         String timestamp = String.valueOf(System.currentTimeMillis());
 
         userActionUtils.signUpNewUserWithoutLogout(timestamp);

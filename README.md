@@ -1,4 +1,4 @@
-## Tech stack:
+### Tech stack:
 - Java 8 ([Install docs](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html))
 - Maven ([Install docs](https://maven.apache.org/install.html))
 - Selenide (Will be installed automatically)
