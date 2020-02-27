@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "items": [
+      {
+        "name": "Faded Short Sleeve T-shirts",
+        "path": "/index.php?id_product=1&controller=product"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "items": [
+      {
+        "name": "Blouse",
+        "path": "/index.php?id_product=2&controller=product"
+      }
+    ]
+  }
+]
