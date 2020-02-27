@@ -7,7 +7,7 @@
 - Please see pom.xml file for more details on application modules
 
 ### Source code
-Source code (git repo) is available at ```https://gitlab.tools.anonyome.com/apalii/anonyome-android-performance```
+Source code (git repo) is available at ```https://github.com/anplay/automationpractice.selenide```
 
 ### Assumptions
 - You already familiar with: Git, Java, Terminal/Command line implementation of your Operation System
@@ -16,7 +16,7 @@ Source code (git repo) is available at ```https://gitlab.tools.anonyome.com/apal
 Use this command to download code base
 ```bash
 cd PROJECT_DIR
-git clone git@gitlab.tools.anonyome.com:apalii/anonyome-android-performance.git
+git clone git@github.com:anplay/automationpractice.selenide.git
 ```
 
 Open terminal (Unix) or CMD prompt (MS Windows) and run following commands:
