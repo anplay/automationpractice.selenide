@@ -6,7 +6,7 @@ import pom.components.AbstractFragment;
 import static com.codeborne.selenide.Condition.visible;
 
 public class ProductFromListFragment extends AbstractFragment {
-    private By addToCartButton = By.xpath(".//*[@title='Add to cart']");
+    private final By addToCartButton = By.xpath(".//*[@title='Add to cart']");
 
     public ProductFromListFragment(String productName) {
         setRootElement(By

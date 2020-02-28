@@ -11,12 +11,7 @@ import com.codeborne.selenide.Configuration;
 
 public class Service {
 
-    private static ThreadLocal<Service> THREAD_LOCAL = new ThreadLocal<Service>() {
-        @Override
-        public Service initialValue() {
-            return new Service();
-        }
-    };
+    private static ThreadLocal<Service> THREAD_LOCAL = ThreadLocal.withInitial(Service::new);
 
     private Service() {
 

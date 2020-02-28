@@ -19,7 +19,7 @@ public class ConfigurationConstants {
 
 		private final String name;
 
-		private Browser(String name) {
+		Browser(String name) {
 			this.name = name;
 		}
 

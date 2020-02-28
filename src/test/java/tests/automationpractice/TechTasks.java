@@ -16,20 +16,20 @@ import java.util.Random;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class TechTasks extends BaseTest {
-    public static final int INDEX = 0;
+    private static final int INDEX = 0;
 
-    MainPage mainPage;
-    HeaderFragment headerFragment;
-    UserActionUtils userActionUtils;
-    ProductListFragment productListFragment;
-    CartPopupFragment cartPopupFragment;
-    BasketFragment basketFragment;
-    BuyProductBlockFragment buyProductBlockFragment;
+    private MainPage mainPage;
+    private HeaderFragment headerFragment;
+    private UserActionUtils userActionUtils;
+    private ProductListFragment productListFragment;
+    private CartPopupFragment cartPopupFragment;
+    private BasketFragment basketFragment;
+    private BuyProductBlockFragment buyProductBlockFragment;
 
-    List<Basket> baskets;
-    int usedBasketId;
+    private List<Basket> baskets;
+    private int usedBasketId;
 
-    Random rand = new Random();
+    private final Random rand = new Random();
 
     @BeforeMethod
     public void setUpClass() {

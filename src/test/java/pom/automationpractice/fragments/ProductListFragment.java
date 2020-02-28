@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import pom.components.AbstractFragment;
 
 public class ProductListFragment extends AbstractFragment {
-    private By rootElement = By.className("product_list");
+    private final By rootElement = By.className("product_list");
 
     public ProductListFragment() {
         setRootElement(rootElement);

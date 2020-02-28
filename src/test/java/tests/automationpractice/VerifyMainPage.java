@@ -11,10 +11,10 @@ import org.testng.annotations.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class VerifyMainPage {
-    MainPage mainPage;
-    FooterFragment footerFragment;
-    HeaderFragment headerFragment;
-    ColumnsFragment columnsFragment;
+    private MainPage mainPage;
+    private FooterFragment footerFragment;
+    private HeaderFragment headerFragment;
+    private ColumnsFragment columnsFragment;
 
     @BeforeMethod
     public void setUpClass() {
@@ -26,7 +26,7 @@ public class VerifyMainPage {
 
     @Step()
     @Test
-    public void verifyMainPage() throws InterruptedException {
+    public void verifyMainPage() {
         mainPage.visit();
 
         assertThat(headerFragment.isVisible()).isTrue();

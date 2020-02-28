@@ -25,7 +25,6 @@ Open terminal (Unix) or CMD prompt (MS Windows) and run following commands:
 cd PROJECT_DIR
 git pull
 ```
-
 ## Run tests
 
 For MacOS platform:
@@ -33,6 +32,7 @@ For MacOS platform:
 To execute UI tests -
 ```
 mvn clean test site -PRunUITestsProfile && allure serve allure-results
+```
 
 ## Reports and logs
 Allure report will be generated and opened in browser.

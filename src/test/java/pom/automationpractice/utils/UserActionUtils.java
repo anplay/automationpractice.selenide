@@ -17,10 +17,10 @@ public class UserActionUtils {
     private static final String POSTCODE = "37000";
     private static final String PHONE = "+380981234567";
 
-    MainPage mainPage;
-    CreateAnAccountFragment createAnAccountFragment;
-    AccountCreationFragment accountCreationFragment;
-    HeaderFragment headerFragment;
+    private MainPage mainPage;
+    private CreateAnAccountFragment createAnAccountFragment;
+    private AccountCreationFragment accountCreationFragment;
+    private HeaderFragment headerFragment;
 
     public UserActionUtils() {
         mainPage = new MainPage();

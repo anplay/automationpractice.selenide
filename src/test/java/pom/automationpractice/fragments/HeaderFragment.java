@@ -6,11 +6,11 @@ import pom.components.AbstractFragment;
 import static com.codeborne.selenide.Condition.visible;
 
 public class HeaderFragment extends AbstractFragment {
-    private By rootElement = By.id("header");
-    private By signInButton = By.className("login");
-    private By signOutButton = By.className("logout");
-    private By searchField = By.id("search_query_top");
-    private By cartButton = By.xpath(".//*[@title='View my shopping cart']");
+    private final By rootElement = By.id("header");
+    private final By signInButton = By.className("login");
+    private final By signOutButton = By.className("logout");
+    private final By searchField = By.id("search_query_top");
+    private final By cartButton = By.xpath(".//*[@title='View my shopping cart']");
 
     public HeaderFragment() {
         setRootElement(rootElement);
