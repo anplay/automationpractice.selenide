@@ -7,6 +7,11 @@
 - Allure ([Install docs](https://docs.qameta.io/allure/#_how_to_proceed))
 - Please see pom.xml file for more details on application modules
 
+## Browsers
+- Chrome (latest version)
+- Firefox (latest version)
+- IE TODO...
+
 ### Source code
 Source code (git repo) is available at ```https://github.com/anplay/automationpractice.selenide```
 
