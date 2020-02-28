@@ -49,15 +49,6 @@ public class TechTasks extends BaseTest {
     }
 
     @Test
-    public void registerNewUser() {
-        String timestamp = String.valueOf(System.currentTimeMillis());
-
-        userActionUtils.signUpNewUserWithoutLogout(timestamp);
-
-        assertThat(headerFragment.isSignOutButtonVisible()).isTrue();
-    }
-
-    @Test
     public void checkoutByRandomBasket() {
         String timestamp = String.valueOf(System.currentTimeMillis());
 
@@ -79,7 +70,6 @@ public class TechTasks extends BaseTest {
         basketFragment.clickIConfirmMyOrderButton();
 
         assertThat(basketFragment.isSuccessAllertVisible()).isTrue();
-
     }
 
     @Test(dependsOnMethods = {"checkoutByRandomBasket"})
@@ -114,7 +104,6 @@ public class TechTasks extends BaseTest {
         assertThat(basketFragment.isSuccessAllertVisible()).isTrue();
 
         new MainPage().visit();
-
     }
 
     private Basket getRandomBasketIndex(int basketSize) {
