@@ -25,7 +25,6 @@ Open terminal (Unix) or CMD prompt (MS Windows) and run following commands:
 cd PROJECT_DIR
 git pull
 ```
-<br>
 
 ## Run tests
 
