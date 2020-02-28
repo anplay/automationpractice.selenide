@@ -60,8 +60,6 @@ public class UserActionUtils {
     }
 
     public void signInByExistedUser(String email) {
-
-        mainPage.visit();
-        headerFragment.clickSignInButton();
+//        TODO -  it is redundant method on current stage
     }
 }
