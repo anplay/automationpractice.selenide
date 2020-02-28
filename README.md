@@ -1,4 +1,4 @@
-# UI Tests for Tech Tasks around Automationpractice site
+# UI tests for tech task around Automationpractice site
 ### Tech stack:
 - Java 8 ([Install docs](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html))
 - Maven ([Install docs](https://maven.apache.org/install.html))
@@ -6,6 +6,11 @@
 - TestNG (Will be installed automatically)
 - Allure ([Install docs](https://docs.qameta.io/allure/#_how_to_proceed))
 - Please see pom.xml file for more details on application modules
+
+## Browsers
+- Chrome (latest version)
+- Firefox (latest version)
+- IE TODO...
 
 ### Source code
 Source code (git repo) is available at ```https://github.com/anplay/automationpractice.selenide```

@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="UI Automation Suite">
+<suite name="UI Automation Suite" parallel="classes" thread-count="2">
+    <test name="Automationpractice_MainPage">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="tests.automationpractice.VerifyMainPage"/>
+        </classes>
+    </test>
     <test name="Automationpractice_Tech_Tasks">
-        <packages>
-            <package name="tests.automationpractice.*"/>
-        </packages>
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.automationpractice.TechTasks"/>
+        </classes>
     </test>
 </suite>

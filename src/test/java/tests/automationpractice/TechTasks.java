@@ -1,5 +1,7 @@
 package tests.automationpractice;
 
+import com.codeborne.selenide.Configuration;
+import org.testng.annotations.Parameters;
 import pom.automationpractice.fragments.*;
 import pom.automationpractice.pages.MainPage;
 import pom.automationpractice.utils.UserActionUtils;
@@ -31,8 +33,10 @@ public class TechTasks extends BaseTest {
 
     private final Random rand = new Random();
 
+    @Parameters({"browser"})
     @BeforeMethod
-    public void setUpClass() {
+    public void setUpClass(String browser) {
+        Configuration.browser = browser;
         mainPage = new MainPage();
         headerFragment = new HeaderFragment();
         userActionUtils = new UserActionUtils();
@@ -42,15 +46,6 @@ public class TechTasks extends BaseTest {
         buyProductBlockFragment = new BuyProductBlockFragment();
 
         baskets = BasketUtils.getBaskets();
-    }
-
-    @Test
-    public void registerNewUser() {
-        String timestamp = String.valueOf(System.currentTimeMillis());
-
-        userActionUtils.signUpNewUserWithoutLogout(timestamp);
-
-        assertThat(headerFragment.isSignOutButtonVisible()).isTrue();
     }
 
     @Test
@@ -75,7 +70,6 @@ public class TechTasks extends BaseTest {
         basketFragment.clickIConfirmMyOrderButton();
 
         assertThat(basketFragment.isSuccessAllertVisible()).isTrue();
-
     }
 
     @Test(dependsOnMethods = {"checkoutByRandomBasket"})
@@ -110,7 +104,6 @@ public class TechTasks extends BaseTest {
         assertThat(basketFragment.isSuccessAllertVisible()).isTrue();
 
         new MainPage().visit();
-
     }
 
     private Basket getRandomBasketIndex(int basketSize) {
