@@ -1,6 +1,8 @@
 package tests.automationpractice;
 
+import com.codeborne.selenide.Configuration;
 import io.qameta.allure.Step;
+import org.testng.annotations.Parameters;
 import pom.automationpractice.fragments.ColumnsFragment;
 import pom.automationpractice.fragments.FooterFragment;
 import pom.automationpractice.fragments.HeaderFragment;
@@ -16,8 +18,10 @@ public class VerifyMainPage {
     private HeaderFragment headerFragment;
     private ColumnsFragment columnsFragment;
 
+    @Parameters({"browser"})
     @BeforeMethod
-    public void setUpClass() {
+    public void setUpClass(String browser) {
+        Configuration.browser = browser;
         mainPage = new MainPage();
         footerFragment = new FooterFragment();
         headerFragment = new HeaderFragment();

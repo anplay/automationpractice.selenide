@@ -1,5 +1,7 @@
 package tests.automationpractice;
 
+import com.codeborne.selenide.Configuration;
+import org.testng.annotations.Parameters;
 import pom.automationpractice.fragments.*;
 import pom.automationpractice.pages.MainPage;
 import pom.automationpractice.utils.UserActionUtils;
@@ -31,8 +33,10 @@ public class TechTasks extends BaseTest {
 
     private final Random rand = new Random();
 
+    @Parameters({"browser"})
     @BeforeMethod
-    public void setUpClass() {
+    public void setUpClass(String browser) {
+        Configuration.browser = browser;
         mainPage = new MainPage();
         headerFragment = new HeaderFragment();
         userActionUtils = new UserActionUtils();
